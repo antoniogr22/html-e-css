@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to-do</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="cabeçalho">
         <h1 class="titulo">Projeto To-do List</h1>
     </header>
-    <article class = "conteudo">
-        <input class="campos" type="txt" id="nameTarefa" name = "nameT" placeholder="Qual tarefa?">
-            <select class="campos">id = "prioridade" name = "prioridade"
-                <option value="">Prioridade</option>
-                <option value="Baixa">Baixa</option>
-                <option value="Média">Média</option>
-                <option value=""Alta>Alta</option>
-            </select>
+    <article class="conteudo">
+        <input class="campos" type="txt" id="nameTarefa" name="nameT" placeholder="Qual tarefa?">
+        <select class="campos">id = "prioridade" name = "prioridade"
+            <option value="">Prioridade</option>
+            <option value="Baixa">Baixa</option>
+            <option value="Média">Média</option>
+            <option value="" Alta>Alta</option>
+        </select>
     </article>
-    <div class = "linhaHorizontal"></div>
-    <article class = "conteudo2">
-        <label class= "coluna1" for="Data">Data</label>
-        <label></label>
+    <div class="linhaHorizontal"></div>
+    <article class="conteudo2">
+        <div class="coluna1">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data">
+        </div>
+        <div class="coluna2">
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora">
+        </div>
     </article>
 </body>
+
 </html>

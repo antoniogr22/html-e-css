@@ -38,23 +38,26 @@ body {
     align-items: center;
     margin: 5% 5%;
 }
-.conteudo2{
+.conteudo2 {
     background-color: #dfe4ee;
     margin: 40px 20px;
-    border-radius: 08px;
-    height: 100px;
-    display:flex;
-    flex-direction: column;
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: row;
     gap: 20px;
+    padding: 10px; 
+    
 }
-.coluna1{
-    font-size: 25px;
+
+.coluna1, .coluna2 {
+    font-size: 20px; 
     font-weight: bold;
     color: #0e42b1;
-    height: 30%;
-    width: 100%;
-    flex: 1;
-    padding: 20px;
+    flex: 1; 
+    padding: 15px;
     box-sizing: border-box;
-    border: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+
 }
