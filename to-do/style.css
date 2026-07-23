@@ -19,9 +19,42 @@ body {
 }
 .conteudo{
     text-align: center;
-    background-color: #abb0b9;
-    margin: 20px 40px;
+    background-color: #dfe4ee;
+    margin: 40px 20px;
+    border-radius: 08px;
+    height: 100px;
+    display:flex;
 }
 .campos{
-
+    margin: 40px 20px;
+    border-radius: 08px;
+    height: 30%;
+    width: 100%;
+}
+.linhaHorizontal{
+    display: flex;
+    width: 90%;
+    border-bottom: 2px solid rgb(23, 101, 173);
+    align-items: center;
+    margin: 5% 5%;
+}
+.conteudo2{
+    background-color: #dfe4ee;
+    margin: 40px 20px;
+    border-radius: 08px;
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.coluna1{
+    font-size: 25px;
+    font-weight: bold;
+    color: #0e42b1;
+    height: 30%;
+    width: 100%;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px;
 }
