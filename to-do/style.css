@@ -18,17 +18,17 @@ body {
     color: #ffffff
 }
 .conteudo{
-    text-align: center;
     background-color: #dfe4ee;
     margin: 40px 20px;
     border-radius: 08px;
-    height: 100px;
-    display:flex;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
 }
 .campos{
     margin: 40px 20px;
     border-radius: 08px;
-    height: 30%;
     width: 100%;
 }
 .linhaHorizontal{
@@ -57,10 +57,56 @@ body {
     flex-direction: column;
     gap: 8px; 
 }
-.botoes{
-    border-radius: 8px;
-    background-color: #107af3f5;
+.botao1{
+    background-color: #3246fa;
     font-weight: bold;
     height: 30%;
-    color:#ffffff;
+    color: #ffffff;
+}
+.botao2{
+    background-color: #ff0000;
+    font-weight: bold;
+    height: 60%;
+    color: #ffffff;
+}
+.botao3{
+    background-color: #04ff04;
+    font-weight: bold;
+    height: 30%;
+    width: 60%;
+    color: #ffffff;
+    border-radius: 8px;
+}
+.card-tarefa {
+  background-color: #dbdde2;
+  color: #0e42b1;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+  margin: 40px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+@keyframes blink-animation {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.alert-badge {
+    display: none; 
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: white;
+    background-color: #ff0000; 
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-left: auto;
+    align-self: center; 
+    animation: blink-animation 1s infinite ease-in-out; 
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.6);
+}
+.card-tarefa.is-due-now:not(.completed) .alert-badge {
+    display: inline-block;
 }

@@ -13,27 +13,34 @@
         <h1 class="titulo">Projeto To-do List</h1>
     </header>
     <article class="conteudo">
-        <input class="campos" type="txt" id="nameTarefa" name="nameT" placeholder="Qual tarefa?">
-        <select class="campos">id = "prioridade" name = "prioridade"
-            <option value="">Prioridade</option>
-            <option value="Baixa">Baixa</option>
-            <option value="Média">Média</option>
-            <option value="" Alta>Alta</option>
-        </select>
+        <div class ="coluna1">
+            <label for="NomeTarefa">Nome</label>
+            <input type="text" id="nameTarefa" name="nameT" placeholder="Qual tarefa?">
+        </div>
+        <div class="coluna2">
+            <label for="Prioridade">Prioridade</label>
+            <select id="prioridade" name="prioridade">
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
+            </select></div>
     </article>
     <div class="linhaHorizontal"></div>
     <article class="conteudo2">
         <div class="coluna1">
             <label for="data">Data</label>
             <input type="date" id="data" name="data">
-            <button class="botoes">Cadastrar Tarefa</button>
+            <button class="botao1" id="botaoCadastra" name="botaoCadastra">Cadastrar Tarefa</button>
         </div>
         <div class="coluna2">
             <label for="hora">Hora</label>
             <input type="time" id="hora" name="hora">
-            <button class ="botoes">Desfazer Tarefa</button>
+            <button class="botao2" id="botaoDesfaz" name="botaoDesfaz">Desfazer Tarefa</button>
         </div>
     </article>
+
+    <div id="lista-tarefas" class="lista-container"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
